@@ -92,7 +92,13 @@
       PasswordAuthentication = false;
     };
   };
-  services.automatic-timezoned.enable = true;
+  #time
+  # services.localtimed.enable = true;
+  # services.automatic-timezoned.enable = true;
+  # location.provider = "geoclue2";
+  # services.geoclue2.enableWifi = true;
+  # time.hardwareClockInLocalTime = true;
+  time.timeZone = "America/Los_Angeles";
 
   #hyprland
   programs.hyprland.enable = true;
