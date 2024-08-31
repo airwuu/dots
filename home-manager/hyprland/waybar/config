@@ -10,13 +10,21 @@
 	//"margin-bottom": 5,
 		
 	"modules-left": [
-		"clock"
+		"hyprland/workspaces"
 	],
 	  
-	"modules-center": ["hyprland/workspaces"], 
+	"modules-center": [
+		"clock"
+	], 
 		
 	"modules-right": [
-			
+		"cpu",
+		"custom/separator#vertical-line",
+		"memory",
+		"custom/separator#vertical-line",
+		"battery",
+		"custom/separator#vertical-line",
+		"custom/power"
 	],
 
 	"clock": {
@@ -37,5 +45,68 @@
 		      "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
 		    }
 		  }
+	},
+	"battery": {
+		  "interval": 60,
+		  "align": 0,
+		  "rotate": 0,
+		  "bat": "BAT1",
+		  "full-at": 100,
+		  "design-capacity": false,
+		  "states": {
+		    "good": 95,
+		    "warning": 30,
+		    "critical": 15
+		       },
+		  "format": "{icon} {capacity}%",
+		  "format-charging": " {capacity}%",
+		  "format-plugged": "󱘖 {capacity}%",
+		  "format-full": "{icon} Full",
+		  "format-alt": "{icon} {time}",
+		  "format-icons": ["", "", "", "", ""],
+		  "format-time": "{H}h {M}min",
+		  "tooltip": true,
+		  "tooltip-format": "{timeTo} {power}w",
+	},
+	"memory": {
+		"format": "󰫗 {}%",
+		"tooltip": "false"
+	},
+
+	"cpu": {
+		"format": " {usage}%",
+		"tooltip": "false"
+	},
+
+	"custom/separator#dot-line": {
+		"format": "",
+		"interval": "once",
+		"tooltip": false
+	},
+
+	"custom/separator#vertical-line": {
+		"format": " | ",
+		"interval": "once",
+		"tooltip": false
+	},
+
+
+	"network": {
+	  "format": "{ifname}",
+	  "format-wifi": "{icon}",
+	  "format-ethernet": "󰌘",
+	  "format-disconnected": "󰌙", 
+	  "tooltip-format": "{ipaddr}  {bandwidthUpBytes}  {bandwidthDownBytes}",
+	  "format-linked": "󰈁 {ifname} (No IP)",
+	  "tooltip-format-wifi": "{essid} {icon} {signalStrength}%",
+	  "tooltip-format-ethernet": "{ifname} 󰌘",
+	  "tooltip-format-disconnected": "󰌙 Disconnected",
+	  "max-length": 50,
+	  "format-icons": ["󰤯","󰤟","󰤢","󰤥","󰤨"]
+	},
+	"custom/power": {
+		  "format": "⏻ ",
+		  "tooltip": false,
+		  "on-click": "~/hyprflake/scripts/power_menu.sh"
 	},
 }

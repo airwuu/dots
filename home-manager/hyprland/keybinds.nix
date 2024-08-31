@@ -23,7 +23,7 @@
 
 		bind = [
 			#fun stuff to edit at the top
-
+			"$mainMod, D, exec, vesktop --enable-features=UseOzonePlatform --ozone-platform=wayland"
 			#comment these out later cuz they're only here for ricing
 			"$mainMod, M, exec, hyprctl dispatch exit"
 			"$mainMod, N, exec, ~/.dots/home-manager/hyprland/hypr-scripts/start-waybar.sh"
@@ -33,6 +33,9 @@
 			"$mainMod, V, fullscreen"
 			"$mainMod, B, togglefloating"
 			"$mainMod, J, layoutmsg, togglesplit"
+			#functionkeys
+			",XF86MonBrightnessDown,exec,brightnessctl set 5%-"
+			",XF86MonBrightnessUp,exec,brightnessctl set +5%"
 			#main apps
 			"$mainMod, T, exec, $terminal"
 			"$mainMod, F, exec, $browser"			
