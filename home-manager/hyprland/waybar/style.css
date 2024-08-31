@@ -106,6 +106,7 @@ tooltip label {
 #mpd,
 #network,
 #pulseaudio,
+#custom-pipewire,
 #taskbar button,
 #taskbar,
 #temperature,
@@ -113,6 +114,7 @@ tooltip label {
 #window,
 #wireplumber,
 /* #workspaces, */
+#power-profiles-daemon,
 #custom-cycle_wall,
 #custom-keybinds,
 #custom-light_dark,

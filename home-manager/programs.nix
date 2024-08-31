@@ -37,6 +37,8 @@
 
 	#misc
 	psmisc
+	power-profiles-daemon
+	pulseaudio
 	
 	#fonts
 	nerdfonts

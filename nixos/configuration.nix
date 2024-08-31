@@ -63,6 +63,7 @@
   programs.zsh.enable=true;
   networking.hostName = "cloud";
   networking.networkmanager.enable = true;
+  services.power-profiles-daemon.enable = true;
   # TODO: Configure your system-wide user settings (groups, etc), add more users as needed.
   users.users = {
     air = {
@@ -103,6 +104,9 @@
   #hyprland
   programs.hyprland.enable = true;
 
+
+  #audio stuff
+  hardware.pulseaudio.enable = true;
  
   # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
   system.stateVersion = "24.05";
