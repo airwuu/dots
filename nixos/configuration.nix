@@ -92,6 +92,7 @@
       PasswordAuthentication = false;
     };
   };
+  services.automatic-timezoned.enable = true;
 
   #hyprland
   programs.hyprland.enable = true;

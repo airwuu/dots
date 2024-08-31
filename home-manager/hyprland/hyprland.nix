@@ -5,6 +5,7 @@
 		#inputs.hyprland.homeManagerModules.default
 		./keybinds.nix
 		./environment.nix
+		#import alllll of waybar
 	];
 	
 	wayland.windowManager.hyprland = {
@@ -16,9 +17,11 @@
 			};
 			#startup programs
 			exec-once = [
-				#waybar
+				
 				#swww
-				"kitty &"	
+				#"kitty &"
+				#"waybar &"	
+				"~/.dots/home-manager/hyprland/hypr-scripts/start-waybar.sh"
 			];
 
 			#monitor

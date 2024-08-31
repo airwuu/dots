@@ -14,14 +14,16 @@
 	#apps
 	firefox
 	vesktop 
+	
 	#terminal
 	kitty
 	git
-	zoxide
 	micro
 	btop
 	fzf
+	
 	#hyprland/WM
+	pywal
 	waybar
 	brightnessctl
 	wofi
@@ -32,6 +34,10 @@
 	xwayland
 	xdg-desktop-portal-gtk
 	xdg-desktop-portal-hyprland
+
+	#misc
+	psmisc
+	
 	#fonts
 	nerdfonts
   ];

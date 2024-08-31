@@ -23,7 +23,11 @@
 
 		bind = [
 			#fun stuff to edit at the top
-			
+
+			#comment these out later cuz they're only here for ricing
+			"$mainMod, M, exec, hyprctl dispatch exit"
+			"$mainMod, N, exec, ~/.dots/home-manager/hyprland/hypr-scripts/start-waybar.sh"
+				
 			#main
 			"$mainMod, Q, killactive"
 			"$mainMod, V, fullscreen"
