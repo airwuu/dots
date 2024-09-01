@@ -112,7 +112,7 @@
 	"custom/power": {
 		  "format": "⏻ ",
 		  "tooltip": false,
-		  "on-click": "~/hyprflake/scripts/power_menu.sh"
+		  "on-click": "~/.dots/home-manager/hyprland/hypr-scripts/power-button.sh"
 	},
 	"power-profiles-daemon": {
 	  "format": "{icon}",

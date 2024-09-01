@@ -28,6 +28,7 @@
 	pywal
 	waybar
 	brightnessctl
+	wlogout
 	wofi
 	tofi
 	dolphin
@@ -40,7 +41,6 @@
 	#screenshotting
 	grim
 	slurp
-	swappy
 	wl-clipboard
 	
 	#misc

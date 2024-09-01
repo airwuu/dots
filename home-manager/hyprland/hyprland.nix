@@ -59,7 +59,10 @@
 				shadow_render_power = 3;
 				"col.shadow" = "rgba(1a1a1aee)";
 			};
-			
+			misc = {
+				disable_splash_rendering = true;
+				disable_hyprland_logo = true;
+			};
 		};
 	};
 
@@ -73,7 +76,7 @@
 	        padding-left = 35%
 	        padding-top = 35%
 	        result-spacing = 25
-	        num-results = 5
+	        num-results = 7
 	        font = spacemono
 	        background-color = #000A
 	      '';
@@ -86,7 +89,7 @@
 	        padding-left = 5%
 	        padding-top = 35%
 	        result-spacing = 25
-	        num-results = 5
+	        num-results = 7
 	        font = monospace
 	        background-color = #000A
 	        prompt-text = "Search: "
