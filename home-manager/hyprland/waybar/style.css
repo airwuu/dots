@@ -8,7 +8,7 @@
     font-size: 98%;
     font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
     padding: 0;
-    margin-top: 1;
+    margin-top: 0;
 }
 
 window#waybar {
@@ -188,6 +188,7 @@ tooltip label {
     border-radius: 15px;
     margin-right: 10px;
     padding: 10px;
+    margin-top: 5px;
     padding-top: 1px;
     padding-bottom: 1px;
     font-weight: bolder;

@@ -94,19 +94,35 @@
     };
   };
   #time
-  # services.localtimed.enable = true;
-  # services.automatic-timezoned.enable = true;
-  # location.provider = "geoclue2";
-  # services.geoclue2.enableWifi = true;
-  # time.hardwareClockInLocalTime = true;
   time.timeZone = "America/Los_Angeles";
 
   #hyprland
-  programs.hyprland.enable = true;
-
+  programs.hyprland = {
+      enable = true;
+      xwayland.enable = true;
+      portalPackage = pkgs.xdg-desktop-portal-hyprland;
+  };
+  xdg.portal = {
+      enable = true;
+      # wlr.enable = false;
+      # xdgOpenUsePortal = false;
+      extraPortals = with pkgs; [
+        xdg-desktop-portal-hyprland
+        xdg-desktop-portal-gtk
+      ];
+  };
 
   #audio stuff
-  hardware.pulseaudio.enable = true;
+  #hardware.pulseaudio.enable = true;
+  security.rtkit.enable = true;
+  services.pipewire = {
+    enable = true;
+    alsa.enable = true;
+    alsa.support32Bit = true;
+    pulse.enable = true;
+    # If you want to use JACK applications, uncomment this
+    #jack.enable = true;
+  };
  
   # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
   system.stateVersion = "24.05";
