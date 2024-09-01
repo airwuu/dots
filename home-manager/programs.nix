@@ -23,10 +23,12 @@
 	fzf
 	
 	#hyprland/WM
+	hyprland
 	pywal
 	waybar
 	brightnessctl
 	wofi
+	tofi
 	dolphin
 	networkmanager
 	networkmanagerapplet

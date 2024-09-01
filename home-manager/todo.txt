@@ -1,0 +1,1 @@
+1. declaratively set themes for pywal

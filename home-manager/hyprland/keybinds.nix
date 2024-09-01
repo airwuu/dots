@@ -3,7 +3,7 @@
 	wayland.windowManager.hyprland.settings= {
 		#vars
 		"$mainMod" = "SUPER";
-		"$terminal" = "kitty";
+		"$terminal" = "kitty --config ~/.cache/wal/colors-kitty.conf";
 		"$browser" = "firefox";
 
 		#vars for the nums, its a variable cuz of dumb stuff earlier
@@ -24,10 +24,11 @@
 		bind = [
 			#fun stuff to edit at the top
 			"$mainMod, D, exec, vesktop --enable-features=UseOzonePlatform --ozone-platform=wayland"
+			
 			#comment these out later cuz they're only here for ricing
 			"$mainMod, M, exec, hyprctl dispatch exit"
 			"$mainMod, N, exec, ~/.dots/home-manager/hyprland/hypr-scripts/start-waybar.sh"
-				
+			"$mainMod, W, exec, ~/.dots/home-manager/hyprland/hypr-scripts/wallpaper.sh"
 			#main
 			"$mainMod, Q, killactive"
 			"$mainMod, V, fullscreen"

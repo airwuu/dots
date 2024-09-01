@@ -5,7 +5,6 @@
 		#inputs.hyprland.homeManagerModules.default
 		./keybinds.nix
 		./environment.nix
-		#import alllll of waybar
 	];
 	
 	wayland.windowManager.hyprland = {
@@ -16,24 +15,26 @@
 				disable_logs = false;
 			};
 			#startup programs
-			exec-once = [
-				
-				#swww
-				#"kitty &"
-				#"waybar &"	
+			exec-once = [			
+				"swww init"
 				"~/.dots/home-manager/hyprland/hypr-scripts/start-waybar.sh"
 			];
 
 			#monitor
 			monitor = [", preferred, auto, 1.333"];
 
+			#pywal stuff
+			source = [
+	     		"~/.cache/wal/colors-hyprland"
+		    ];
+
 			#windows and stuff
 			general = {
 				gaps_in = 3;
 				gaps_out = 6;
 				border_size = 3;
-				"col.active_border" = "rgba(33ccffee)";
-				"col.inactive_border" = "rgba(595959aa)";
+				"col.active_border" = "$color11 rgba(59595900) $color14 45deg"; 
+				"col.inactive_border" = "rgba(59595950)";
 				resize_on_border = false;
 				layout = "dwindle";
 			};
@@ -61,4 +62,34 @@
 			
 		};
 	};
+
+	#tofi configs
+	home.file = {
+	      ".config/tofi/config".text = ''
+	        width = 100%
+	        height = 100%
+	        border-width = 0
+	        outline-width = 0
+	        padding-left = 35%
+	        padding-top = 35%
+	        result-spacing = 25
+	        num-results = 5
+	        font = spacemono
+	        background-color = #000A
+	      '';
+	
+	      ".config/tofi/config-search".text = ''
+	        width = 100%
+	        height = 100%
+	        border-width = 0
+	        outline-width = 0
+	        padding-left = 5%
+	        padding-top = 35%
+	        result-spacing = 25
+	        num-results = 5
+	        font = monospace
+	        background-color = #000A
+	        prompt-text = "Search: "
+	      '';
+	 };
 }
