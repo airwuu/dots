@@ -123,6 +123,18 @@
     # If you want to use JACK applications, uncomment this
     #jack.enable = true;
   };
+
+#simple login manager
+  services.greetd = {
+    enable = true;
+    settings = rec {
+      initial_session = {
+        command = "Hyprland";
+        user = "air";
+      };
+      default_session = initial_session;
+    };
+  };
  
   # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
   system.stateVersion = "24.05";

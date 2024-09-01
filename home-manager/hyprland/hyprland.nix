@@ -2,9 +2,10 @@
 {
 	#imports here if i need ig
 	imports = [
-		#inputs.hyprland.homeManagerModules.default
+		# inputs.hyprland.homeManagerModules.default
 		./keybinds.nix
 		./environment.nix
+		./hyprlock.nix
 	];
 	
 	wayland.windowManager.hyprland = {
@@ -15,7 +16,8 @@
 				disable_logs = false;
 			};
 			#startup programs
-			exec-once = [			
+			exec-once = [	
+				"hyprlock"		
 				"swww init"
 				"~/.dots/home-manager/hyprland/hypr-scripts/start-waybar.sh"
 			];

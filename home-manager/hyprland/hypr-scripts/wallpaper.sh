@@ -21,7 +21,8 @@ source "$HOME/.cache/wal/colors.sh"
 # ----------------------------------------------------- 
 # Copy selected wallpaper into .cache folder
 # ----------------------------------------------------- 
-cp $wallpaper ~/.cache/current_wallpaper.jpg   
+#cp $wallpaper ~/.cache/current_wallpaper.png   
+cp $wallpaper ~/.cache/current_wallpaper.jpg
 
 # -----------------------------------------------------
 # get wallpaper image name
