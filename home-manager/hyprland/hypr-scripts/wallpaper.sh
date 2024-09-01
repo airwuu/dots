@@ -41,6 +41,9 @@ swww img $wallpaper \
 
 # hyprland colors update
 cp ~/.cache/wal/colors-hyprland ~/.config/hypr/colors.conf
+sleep 0.1
+# vesktop colors update
+cp ~/.cache/wal/colors-discord.css ~/.config/vesktop/settings/quickCss.css
 sleep 1
 
 # ----------------------------------------------------- 

@@ -21,6 +21,7 @@
 	micro
 	btop
 	fzf
+	bat
 	
 	#hyprland/WM
 	hyprland
