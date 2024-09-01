@@ -39,6 +39,7 @@
 			", XF86AudioRaiseVolume, exec, wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%+"
 			", XF86AudioLowerVolume, exec, wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 5%-"
 			", XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+			 ", Print, exec, ~/.dots/home-manager/hyprland/hypr-scripts/screenshot.sh"
 			#main apps
 			"$mainMod, T, exec, $terminal"
 			"$mainMod, F, exec, $browser"			

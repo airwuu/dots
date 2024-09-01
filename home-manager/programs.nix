@@ -34,7 +34,12 @@
 	xwayland
 	xdg-desktop-portal-gtk
 	xdg-desktop-portal-hyprland
-
+	#screenshotting
+	grim
+	slurp
+	swappy
+	wl-clipboard
+	
 	#misc
 	psmisc
 	power-profiles-daemon
