@@ -3,9 +3,9 @@
   programs.hyprlock = {
     enable = true;
     settings = {
-      source = ''$HOME/.cache/wal/colors-hyprland.conf'';
+     # source = ''$HOME/.cache/wal/colors-hyprland.conf'';
       general = {
-        grace = 0;
+        grace = 0.5;
         no_fade_in = false;
         disable_loading_bar = false;
       };

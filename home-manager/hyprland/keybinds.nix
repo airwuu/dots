@@ -29,7 +29,7 @@
 			"$mainMod, M, exec, hyprctl dispatch exit"
 			"$mainMod, N, exec, ~/.dots/home-manager/hyprland/hypr-scripts/start-waybar.sh"
 			"$mainMod, W, exec, ~/.dots/home-manager/hyprland/hypr-scripts/wallpaper.sh"
-			"$mainMod, L, exec, hyprlock"
+			"$mainMod, L, exec, hyprlock --immediate & sleep 1"
 			#main
 			"$mainMod, Q, killactive"
 			"$mainMod, V, fullscreen"
@@ -78,6 +78,10 @@
 			"$mainMod, mouse:272, movewindow" #left click
 			"$mainMod, mouse:273, resizewindow" #right click
 		];
+		#lid switch
+		bindl= [
+		      ",switch:off:Lid Switch, exec, hyprlock --immediate & sleep 1"
+	    ];	
 		input = {
 			touchpad = {
 				natural_scroll = true;	
