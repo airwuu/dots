@@ -25,10 +25,11 @@
 			#fun stuff to edit at the top
 			"$mainMod, D, exec, vesktop --enable-features=UseOzonePlatform --ozone-platform=wayland"
 			
-			#comment these out later cuz they're only here for ricing
+			#comment these out later cuz they're only here for ricing?
 			"$mainMod, M, exec, hyprctl dispatch exit"
 			"$mainMod, N, exec, ~/.dots/home-manager/hyprland/hypr-scripts/start-waybar.sh"
 			"$mainMod, W, exec, ~/.dots/home-manager/hyprland/hypr-scripts/wallpaper.sh"
+			"$mainMod, L, exec, hyprlock"
 			#main
 			"$mainMod, Q, killactive"
 			"$mainMod, V, fullscreen"

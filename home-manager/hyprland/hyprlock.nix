@@ -3,6 +3,7 @@
   programs.hyprlock = {
     enable = true;
     settings = {
+      source = ''$HOME/.cache/wal/colors-hyprland.conf'';
       general = {
         grace = 0;
         no_fade_in = false;
@@ -13,67 +14,54 @@
       background = {
         monitor = "";
         path = "~/.cache/current_wallpaper.jpg";
-        blur_passes = 0;
+        blur_passes = 1;
         contrast = 0.8916;
-        brightness = 0.8172;
+        brightness = 0.3172;
         vibrancy = 0.1696;
         vibrancy_darkness = 0.0;
       };
 
       label = [
-        {
-          # Day-Month-Date
-          monitor = "";
-          text = ''cmd[update:1000] echo -e "$(date +"%A, %B %d")"'';
-          color = "rgba(216, 222, 233, .7)";
-          font_size = 28;
-          font_family = "SFProDisplay Nerd Font Bold";
-          position = "0, 390";
-          halign = "center";
-          valign = "center";
-        }
-        # Time
-        {
-          monitor = "";
-          text = ''cmd[update:1000] echo "<span>$(date +"%I:%M")</span>"'';
-          color = "rgba(216, 222, 233, .7)";
-          font_size = 160;
-          font_family = "steelfish outline regular";
-          position = "0, 370";
-          halign = "center";
-          valign = "center";
-        }
+        # {
+        #   # Day-Month-Date
+        #   monitor = "";
+        #   text = ''cmd[update:1000] echo -e "$(date +"%A, %B %d")"'';
+        #   color = "rgba(255, 255, 255, 1)";
+        #   font_size = 78;
+        #   font_family = "steelfish outline thin";
+        #   position = "0, 590";
+        #   halign = "center";
+        #   valign = "center";
+        # }
+        # # Time
+        # {
+        #   monitor = "";
+        #   text = ''cmd[update:1000] echo "<span>$(date +"%I:%M")</span>"'';
+        #   color = "rgba(216, 222, 233, .7)";
+        #   font_size = 160;
+        #   font_family = "steelfish outline regular";
+        #   position = "0, 370";
+        #   halign = "center";
+        #   valign = "center";
+        # }
+
+
         # USER
         {
           monitor = "";
-          text = "    $USER";
-          color = "rgba(216, 222, 233, 0.80)";
+          text = "Hi $USER :)";
+          color = "rgba(255, 255, 255, 1)";
           outline_thickness = 2;
           dots_size = 0.2; # Scale of input-field height, 0.2 - 0.8
           dots_spacing = 0.2; # Scale of dots' absolute size, 0.0 - 1.0
           dots_center = true;
-          font_size = 18;
-          font_family = "SFProDisplay Nerd Font Bold";
-          position = "0, -180";
+          font_size = 50;
+          font_family = "steelfish outline thin";
+          position = "0, 35";
           halign = "center";
           valign = "center";
         }
       ];
-
-      # Foreground
-      # image = [{
-      #   monitor = "";
-      #   path = "~/.config/hypr/foreground.png";
-      #   size = 700;
-      #   border_size = 0;
-      #   rounding = 0;
-      #   rotate = 0;
-      #   reload_time = 0;
-      #   reload_cmd = "";
-      #   position = "0, -66";
-      #   halign = "center";
-      #   valign = "center";
-      # }];
 
       # INPUT FIELD
       input-field = [{
@@ -89,9 +77,9 @@
         fade_on_empty = false;
         font_family = "SFProDisplay Nerd Font Bold";
         placeholder_text =
-          ''<i><span foreground="##ffffff99">🔒 Enter Pass</span></i>'';
+          ''<span foreground="##ffffff99">🔒 password</span>'';
         hide_input = false;
-        position = "0, -250";
+        position = "0, -50";
         halign = "center";
         valign = "center";
       }];
