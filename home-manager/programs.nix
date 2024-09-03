@@ -14,6 +14,7 @@
 	#apps
 	firefox
 	vesktop 
+	obsidian
 	
 	#terminal
 	kitty

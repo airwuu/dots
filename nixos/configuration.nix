@@ -123,6 +123,9 @@
       ];
   };
 
+  #fingerprint
+  services.fprintd.enable = true;
+
   #audio stuff
   #hardware.pulseaudio.enable = true;
   security.rtkit.enable = true;

@@ -73,11 +73,12 @@
         dots_center = true;
         outer_color = "rgba(255, 255, 255, 0)";
         inner_color = "rgba(255, 255, 255, 0.1)";
+        check_color = "rgba(255, 255, 255, 0.1)";
         font_color = "rgb(200, 200, 200)";
         fade_on_empty = false;
-        font_family = "SFProDisplay Nerd Font Bold";
+        font_family = "steelfish outline thin";
         placeholder_text =
-          ''<span foreground="##ffffff99">🔒 password</span>'';
+          ''<span foreground="##ffffff99">fingerprint</span>'';
         hide_input = false;
         position = "0, -50";
         halign = "center";
