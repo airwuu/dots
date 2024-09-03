@@ -48,6 +48,8 @@
       flake-registry = "";
       # Workaround for https://github.com/NixOS/nix/issues/9574
       nix-path = config.nix.nixPath;
+      #store
+      auto-optimise-store = true;	
     };
     # Opinionated: disable channels
     channel.enable = false;
@@ -55,6 +57,15 @@
     # Opinionated: make flake registry and nix path match flake inputs
     registry = lib.mapAttrs (_: flake: {inherit flake;}) flakeInputs;
     nixPath = lib.mapAttrsToList (n: _: "${n}=flake:${n}") flakeInputs;
+
+    #garbage collection
+    gc = {
+    		automatic = true;
+    		dates = "weekly";
+    		randomizedDelaySec = "14m";
+    		# keep last 5 gens
+    		options = "--delete-older-than +5";
+   	};
   };
 
   # Use the systemd-boot EFI boot loader.
@@ -135,6 +146,8 @@
       default_session = initial_session;
     };
   };
+
+
  
   # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
   system.stateVersion = "24.05";
