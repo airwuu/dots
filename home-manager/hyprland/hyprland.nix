@@ -6,6 +6,7 @@
 		./keybinds.nix
 		./environment.nix
 		./hyprlock.nix
+		./fuzzel.nix
 	];
 	
 	wayland.windowManager.hyprland = {

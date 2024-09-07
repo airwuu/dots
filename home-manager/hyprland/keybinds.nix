@@ -33,6 +33,7 @@
 			"$mainMod, L, exec, hyprlock --immediate & sleep 1"
 			#main
 			"$mainMod, Q, killactive"
+			"$mainMod, Space, exec, fuzzel"
 			"$mainMod, V, fullscreen"
 			"$mainMod, B, togglefloating"
 			"$mainMod, J, layoutmsg, togglesplit"

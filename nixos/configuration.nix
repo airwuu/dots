@@ -126,6 +126,9 @@
   #fingerprint
   services.fprintd.enable = true;
 
+  #frameowkr firmware
+  services.fwupd.enable = true;
+
   #audio stuff
   #hardware.pulseaudio.enable = true;
   security.rtkit.enable = true;

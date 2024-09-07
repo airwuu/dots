@@ -60,6 +60,9 @@
   # programs.neovim.enable = true;
   # home.packages = with pkgs; [ steam ];
 
+  #fuzzel
+  # programs.fuzzel.enable = true;
+
   # Enable home-manager and git
   programs.home-manager.enable = true;
   programs.zsh = {

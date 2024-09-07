@@ -30,7 +30,6 @@
 	waybar
 	brightnessctl
 	wlogout
-	wofi
 	tofi
 	dolphin
 	networkmanager
