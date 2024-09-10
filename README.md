@@ -20,7 +20,7 @@
 | --------------------------- | :---------------------------------------:
 | **Window Manager**          | hyprland |
 | **Bar**                     | waybar |
-| **Application Launcher**    | none |
+| **Application Launcher**    | fuzzel |
 | **Notification Daemon**     | none |
 | **Terminal Emulator**       | kitty |
 | **Shell**                   | zsh, starship |
