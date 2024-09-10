@@ -70,6 +70,7 @@
 		};
 	};
 
+	
 	#tofi configs
 	home.file = {
 	      ".config/tofi/config".text = ''
