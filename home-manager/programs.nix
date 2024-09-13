@@ -15,6 +15,7 @@
 	firefox
 	vesktop 
 	obsidian
+	vscodium
 	
 	#terminal
 	kitty
