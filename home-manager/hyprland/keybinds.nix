@@ -25,6 +25,8 @@
 			#fun stuff to edit at the top
 			"$mainMod, D, exec, vesktop --enable-features=UseOzonePlatform --ozone-platform=wayland"
 			"$mainMod, O, exec, obsidian --enable-features=UseOzonePlatform --ozone-platform=wayland"
+			"$mainMod, C, exec, codium --enable-features=UseOzonePlatform --ozone-platform=wayland"
+			
 			
 			#comment these out later cuz they're only here for ricing?
 			"$mainMod, M, exec, hyprctl dispatch exit"
