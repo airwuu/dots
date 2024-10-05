@@ -66,6 +66,7 @@
 				disable_splash_rendering = true;
 				disable_hyprland_logo = true;
 				allow_session_lock_restore = true;
+				focus_on_activate = true;
 			};
 		};
 	};
