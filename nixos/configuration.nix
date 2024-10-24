@@ -75,6 +75,7 @@
   networking.hostName = "cloud";
   networking.networkmanager.enable = true;
   services.power-profiles-daemon.enable = true;
+  environment.variables.XCURSOR_SIZE = "32";
   # TODO: Configure your system-wide user settings (groups, etc), add more users as needed.
   users.users = {
     air = {

@@ -14,7 +14,14 @@
 
       # Theme
       # "XCURSOR_THEME, Bibata-Modern-Classic"
-      "XCURSOR_SIZE,24"
+
+      ##attempt to fix cursor
+      # "QT_SCALE_FACTOR=2.6"
+      # "ELM_SCALE=2.6"
+      # "GDK_SCALE=2.6"
+      # "XCURSOR_SIZE,108"
+      "XCURSOR_SIZE,32"
+      # "HYPRCURSOR_SIZE,108"
       # "GTK_THEME, Catppuccin-Macchiato-Standard-Teal-Dark:dark"
 
       # Misc

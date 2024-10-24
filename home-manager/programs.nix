@@ -16,6 +16,11 @@
 	vesktop 
 	obsidian
 	vscodium
+	prismlauncher
+
+	#coding
+	nodejs_22
+	node2nix
 	
 	#terminal
 	kitty
